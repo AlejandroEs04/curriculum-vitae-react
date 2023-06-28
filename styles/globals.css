@@ -1,0 +1,102 @@
+:root {
+  --primary: rgb(3, 42, 68);
+  --primaryLight: #3E92CC;
+  --WhiteNotSoWhite: #FFFAFF;
+  --black: #000000;
+  --gray: #303030;
+  --white: #FFFFFF;
+  --fuente-principal: 'Outfit', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  display: flex;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  background: rgb(48,48,48);
+  background: linear-gradient(290deg, rgb(3, 42, 68) 0%, rgba(0,0,0,1) 100%); 
+  background-repeat: no-repeat;
+  color: var(--white);
+  flex: 1;
+  
+  height: 100%;
+  word-break: break-all;
+}
+.contenedor {
+  color: var(--white);
+  margin: 3rem 10%;
+  padding: 2rem;
+  border-radius: 1rem;
+  word-break: normal;
+}
+@media (max-width: 400px) {
+  .contenedor {
+    margin: 3rem 1rem;
+  }
+}
+.gray {
+  background-color: var(--gray);
+}
+.white {
+  background-color: var(--WhiteNotSoWhite);
+  color: var(--gray);
+}
+.grid2 {
+  display: flex;
+  flex-direction: column  ;
+}
+.flexRow {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .flexRow {
+    flex-direction: row;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.btn {
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--gray);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--WhiteNotSoWhite);
+  padding: 1.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  transition: all ease-in-out 0.5s;
+}
+.btn:hover {
+  background-color: var(--WhiteNotSoWhite);
+  color: var(--black);
+}
+button {
+  cursor: pointer;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+

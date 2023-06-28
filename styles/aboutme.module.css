@@ -1,0 +1,14 @@
+.contenedor {
+    padding: 3rem;
+}
+.contenedor h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.moreBig {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.moreBig span {
+    color: var(--primaryLight);
+}
