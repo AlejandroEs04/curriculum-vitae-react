@@ -11,7 +11,10 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.barraNav}>
-        <h2>Alex<span>Dev.</span></h2>
+        <Link href={'/'}>
+          <h2>Alex<span>Dev.</span></h2>
+        </Link>
+        
         <nav className={styles.navegacion}>
             <Link href={'/'} className={router === '/' ? styles.active : ''}>Inicio</Link>
             <Link href={'/portafolio'} className={router === '/portafolio' ? styles.active : ''}>Portafolio</Link>

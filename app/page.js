@@ -3,7 +3,6 @@ import styles from '../styles/inicio.module.css'
 import Link from "next/link"
 import Technologies from './components/technologies'
 import AboutMe from './components/aboutMe'
-import { useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 
 export const metadata = {
@@ -35,7 +34,7 @@ export default function Index() {
         </div>
 
         <div className='flexRow center'>
-          <Link href="/#tegnologies" className={`btn ${styles.btnKnowMe}`}>
+          <Link href="/#aboutme" className={`btn ${styles.btnKnowMe}`}>
             Know more about me
           </Link>
 

@@ -12,3 +12,12 @@
 .moreBig span {
     color: var(--primaryLight);
 }
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorImagen img {
+    width: 100%;
+    height: auto;
+}

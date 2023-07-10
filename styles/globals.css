@@ -36,6 +36,10 @@ body {
   height: 100%;
   word-break: break-all;
 }
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 .contenedor {
   color: var(--white);
   margin: 3rem 10%;
@@ -66,7 +70,7 @@ body {
   align-items: center;
   gap: 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1008px) {
   .flexRow {
     flex-direction: row;
   }
@@ -100,3 +104,15 @@ button {
   align-items: center;
 }
 
+.imagenGirar {
+  animation: girar 5s infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

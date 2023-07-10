@@ -16,6 +16,7 @@
     );
 }
 .technology img {
+    margin-bottom: 1rem;
     width: 90%;
     height: 90%;
     max-width: 15rem;
@@ -48,4 +49,28 @@
 .textoDesc span {
     font-weight: 700;
     color: var(--gray);
+}
+.imagenEscala {
+    animation: palpitar 2s infinite;
+}
+
+@keyframes palpitar {
+    18% {
+        transform: scale(1.05);
+    }
+    36% {
+        transform: scale(1);
+    }
+    54% {
+        transform: scale(1.05);
+    }
+    72% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.05);
+    }
+    90% {
+        transform: scale(1);
+    }
 }
