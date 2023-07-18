@@ -8,10 +8,6 @@ import LanguageProvider from './idioma-provider'
 
 const inter = Inter({ subsets: ['latin'], })
 
-export const metadata = {
-  title: 'Inicio',
-}
-
 export default function RootLayout({ children }) {
   const [ingles, setIngles] = useState(true);
   return (
