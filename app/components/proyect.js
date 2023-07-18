@@ -17,7 +17,7 @@ function Proyect({proyecto, ingles}) {
 
         <div className={styles.carruselContenedor}>
             <Carrusel 
-              key={proyecto.imagenes.id}
+              key={proyecto.id}
               imagenes={proyecto.imagenes}
             />
         </div>

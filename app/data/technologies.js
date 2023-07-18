@@ -55,7 +55,8 @@ const proyectos = [
                 id: 2
             }
         ],
-        link : 'https://dd-code.com/'
+        link : 'https://dd-code.com/',
+        id: 0
     },
     {
         name: 'PX Consultores',
@@ -75,7 +76,8 @@ const proyectos = [
                 id: 2
             }
         ],
-        link : 'https://pxmanufactura.com/pxmanufactua-public/'
+        link : 'https://pxmanufactura.com/pxmanufactua-public/',
+        id: 1
     }
 ]
 

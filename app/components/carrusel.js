@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 
 function Carrusel({imagenes}) {
   const [contador, setContador] = useState(0)
-  
 
   useEffect(() => {
     if(contador >= 3) {
@@ -21,7 +20,7 @@ function Carrusel({imagenes}) {
     <div className={styles.carrusel}>
         <div className={styles.carruselImage}>
           {imagenes.map( imagen => (
-            <Image src={imagen.imageName} width={400} height={250} alt='Imagen' id={imagen.id} className={imagen.id === contador ? styles.active : 'carruselImage'} />
+            <Image src={imagen.imageName} width={400} height={250} alt='Imagen' id={imagen.id} className={imagen.id === contador ? styles.active : 'carruselImage'} key={imagen.id}/>
           ))
           }
 

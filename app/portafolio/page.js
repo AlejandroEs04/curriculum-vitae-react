@@ -20,7 +20,7 @@ function Page() {
           <div className={styles.proyectosContenedor}>
             {proyectos.map( proyecto => (
               <Proyect 
-                key={proyecto.name}
+                key={proyecto.id}
                 proyecto={proyecto}
                 ingles={ingles}
               />
