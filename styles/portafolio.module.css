@@ -1,0 +1,19 @@
+.contenedorPortafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    color: var(--black);
+    gap: 2rem;
+    padding: 3rem 10%;
+}
+.contenedorPortafolio h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.proyectosContenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+}

@@ -1,0 +1,56 @@
+.contenedorProyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .contenedorProyecto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.textoProyecto {
+    width: 100%;
+    max-width: 50rem;
+}
+.textoProyecto h3 {
+    color: var(--primaryLight);
+}
+.imagenProyecto {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.imagenProyecto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.carruselContenedor {
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .carruselContenedor {
+        width: 100%;
+    }
+}
+.linkContenedor {
+    margin-top: 1rem;
+}
+.linkContenedor p, .linkContenedor a {
+    font-size: 1.7rem;
+    color: var(--black);
+}
+.linkContenedor a {
+    color: var(--primaryLight);
+    font-weight: 700;
+    transition: all linear 0.2s;
+}
+.linkContenedor a:hover {
+    color: var(--primary);
+}

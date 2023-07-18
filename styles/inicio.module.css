@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
-    margin: 20rem 0 5rem 0;
+    margin: 25rem 0 5rem 0;
 }
 .presentacion {
     display: flex;
@@ -12,10 +12,18 @@
     height: 100%;
     flex: 1;
 }
+.contenedorImagen {
+    display: none;
+}
 @media (min-width: 768px) {
     .paginaInicio {
         height: 100vh;
         margin: 0;
+    }
+}
+@media (min-width: 1008px) {
+    .contenedorImagen {
+        display: flex;
     }
 }
 .presentacion h1 {
@@ -66,51 +74,6 @@
     border-radius: 0 3rem 3rem 0;
     text-decoration: none;
     color: var(--white);
-}
-
-/** Flecha hacia abajo **/
-div.arrow {
-	width: 2rem;
-	height: 2rem;
-	box-sizing: border-box;
-	left: 50%;
-	top: 50%;
-	transform: rotate(135deg);
-}
-div.arrow::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-width: .8vmin .8vmin 0 0;
-    border-style: solid;
-    border-color: #fafafa;
-    transition: .2s ease;
-    display: block;
-    transform-origin: 100% 0;
-}
-div.arrow::after {
-    content: '';
-    float: left;
-    position: relative;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    border-width: 0 .8vmin 0 0;
-    border-style: solid;
-    border-color: #fafafa;
-    transform-origin: 100% 0;
-    transition:.2s ease;
-}
-div.arrow:hover::after {
-    transform: rotate(45deg);
-    border-color: var(--primaryLight);
-    height: 120%;
-    top: -82.5%;
-}
-div.arrow:hover::before {
-    border-color: var(--primaryLight);
-    transform: scale(.8);
-    
 }
 .btnKnowMe {
     background-color: transparent;

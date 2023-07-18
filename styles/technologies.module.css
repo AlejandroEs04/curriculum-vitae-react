@@ -50,27 +50,3 @@
     font-weight: 700;
     color: var(--gray);
 }
-.imagenEscala {
-    animation: palpitar 2s infinite;
-}
-
-@keyframes palpitar {
-    18% {
-        transform: scale(1.05);
-    }
-    36% {
-        transform: scale(1);
-    }
-    54% {
-        transform: scale(1.05);
-    }
-    72% {
-        transform: scale(1);
-    }
-    90% {
-        transform: scale(1.05);
-    }
-    90% {
-        transform: scale(1);
-    }
-}

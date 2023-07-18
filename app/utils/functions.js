@@ -1,10 +1,5 @@
-import Typed from "typed.js"
+const handleIngles = e => {
+  console.log('hola');
 
-const typed = new Typed('.typed', {
-    strings: [
-      '<i>developer</i>',
-      '<i>design</i>'
-    ]
-})
-
-console.log('hola')
+  return 1
+}

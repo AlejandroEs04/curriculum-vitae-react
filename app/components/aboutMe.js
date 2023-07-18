@@ -1,6 +1,6 @@
 import styles from '../../styles/aboutme.module.css'
 import Image from 'next/image'
-import fondoImagen from '../../public/img/fondoAboutMe.png'
+import fondoAboutMe from '../../public/img/AboutMe.jpeg'
 
 function AboutMe() {
   return (
@@ -10,12 +10,15 @@ function AboutMe() {
       <div className='contenedor gray grid2'>
         <div className='contenedor'>
             <p className={styles.moreBig}>Hello!, I'm <span>Alejandro</span></p>
-            <p>I'm apassionate web developer with 4 years of experience</p>
-            <p>Aliquam erat volutpat. Fusce dictum auctor augue, quis placerat turpis egestas quis. Pellentesque finibus, leo eu vestibulum bibendum, nibh sapien semper est, faucibus congue tortor libero nec ipsum</p>
+            <div className='gap2'>
+              <p>I'm web developer with 4 years of experience</p>
+              <p>I Know how to use different technologies in Front End and Back End, like: React, Java, JavaScript, PHP, Python, and more.</p>
+            </div>
+            
         </div>
         
         <div className={styles.contenedorImagen}>
-            <Image src={fondoImagen} alt='Imagen Fondo Acerca de Mi'/>
+            <Image src={fondoAboutMe} alt='Imagen Fondo Acerca de Mi'/>
         </div>
       </div>
     </div>
