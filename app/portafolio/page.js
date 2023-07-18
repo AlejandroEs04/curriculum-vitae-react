@@ -5,10 +5,6 @@ import styles from '../../styles/portafolio.module.css'
 import Proyect from "../components/proyect";
 import { proyectos } from '../data/technologies'
 
-export const metadata = {
-    title: 'Portafolio'
-}
-
 function Page() {
   const ingles = useContext(LanguageContext);
   return (

@@ -8,10 +8,6 @@ import AcercaMi from './components/acercaMi'
 import { LanguageContext } from './idioma-provider'
 import Typewriter from 'typewriter-effect';
 
-export const metadata = {
-  title: 'Inicio',
-}
-
 export default function Index() {
   const ingles = useContext(LanguageContext)
 

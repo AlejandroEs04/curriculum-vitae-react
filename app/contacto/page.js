@@ -8,11 +8,6 @@ import FormularioContacto from "../components/formularioContacto"
 import whatsappIcon from '../../public/img/whatsapp.svg'
 import guithubIcon from '../../public/img/github.svg'
 
-
-export const metadata = {
-  title: 'Contacto',
-}
-
 function Page() {
   const ingles = useContext(LanguageContext);
   return (
