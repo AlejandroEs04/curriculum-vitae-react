@@ -11,6 +11,15 @@
     box-shadow: 0px 5px 10px #00000048;
     z-index: 2;
 }
+.barraNav a {
+    text-decoration: none;
+}
+.barraNav a h2, .barraNav a span {
+    color: var(--white);
+}
+.barraNav a span {
+    color: var(--primaryLight);
+}
 .barraNav h2 {
     font-size: 2.8rem;
     font-weight: 900;
@@ -37,7 +46,6 @@
     border-bottom: 3px solid transparent;
     font-weight: 200;
     font-size: 1.5rem;
-
 
     transition: border-bottom ease 0.2s;
 }
@@ -102,4 +110,9 @@
 .contactBtn:hover {
     background-color: var(--primary);
     transform: scale(1.1);
+}
+.btnLink {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
 }

@@ -1,12 +1,15 @@
-'use client'
-import { useContext } from "react";
-import { LanguageContext } from "../idioma-provider"
 import styles from '../../styles/portafolio.module.css'
-import Proyect from "../components/proyect";
-import { proyectos } from '../data/technologies'
+import Proyect from "@/components/proyect";
 
-function Page() {
-  const ingles = useContext(LanguageContext);
+const fetchProjects = () => {
+  return fetch('https://noxxugmr.apicdn.sanity.io/v2021-03-25/data/query/production?query=*[_type+%3D%3D+%22proyectos%22]', { cache: 'no-cache' }).then(res => res.json())
+}
+
+export default async function Page() {
+  const ingles = true
+
+  const {result: projects} = await fetchProjects()
+
   return (
     <main>
       <div className="paginaInicio">
@@ -18,13 +21,13 @@ function Page() {
           <h2>{ingles === false ? 'Mis proyectos' : 'My projects'}</h2>
 
           <div className={styles.proyectosContenedor}>
-            {proyectos.map( proyecto => (
-              <Proyect 
-                key={proyecto.id}
-                proyecto={proyecto}
-                ingles={ingles}
-              />
-            ))}
+          {projects.map( proyecto => (
+            <Proyect 
+              key={proyecto.id}
+              proyecto={proyecto}
+              ingles={ingles}
+            />
+          ))}
           </div>
         </div>
       </div>
@@ -32,4 +35,4 @@ function Page() {
   )
 }
 
-export default Page
+//

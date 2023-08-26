@@ -1,15 +1,12 @@
-'use client'
-import { useContext } from "react"
-import { LanguageContext } from "../idioma-provider"
 import styles from '../../styles/contacto.module.css'
 import Image from "next/image"
 import Link from "next/link"
-import FormularioContacto from "../components/formularioContacto"
+import FormularioContacto from "@/components/formularioContacto"
 import whatsappIcon from '../../public/img/whatsapp.svg'
 import guithubIcon from '../../public/img/github.svg'
 
 function Page() {
-  const ingles = useContext(LanguageContext);
+  const ingles = true
   return (
     <main>
       <div className="paginaInicio">

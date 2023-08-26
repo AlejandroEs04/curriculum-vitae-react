@@ -1,5 +1,5 @@
 'use client'
-import styles from '../../styles/formulario.module.css'
+import styles from '../styles/formulario.module.css'
 import { useState } from 'react'
 
 function FormularioContacto({ingles}) {

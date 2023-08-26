@@ -1,7 +1,6 @@
-import styles from '../../styles/proyecto.module.css'
-import Image from 'next/image'
-import Carrusel from './carrusel'
+import styles from '../styles/proyecto.module.css'
 import Link from 'next/link'
+import Slider from './Slider'
 
 function Proyect({proyecto, ingles}) {
   return (
@@ -15,12 +14,10 @@ function Proyect({proyecto, ingles}) {
             </div>
         </div>
 
-        <div className={styles.carruselContenedor}>
-            <Carrusel 
-              key={proyecto.id}
-              imagenes={proyecto.imagenes}
-            />
-        </div>
+        <Slider 
+          key={proyecto.id}
+          imagenes={proyecto.imagenes}
+        />
     </div>
   )
 }

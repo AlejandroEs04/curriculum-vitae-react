@@ -1,29 +1,20 @@
-'use client'
 import styles from '../styles/globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Inter } from 'next/font/google'
-import { createContext, useState } from 'react'
-import Script from 'next/script'
-import Header from './components/header'
-import LanguageProvider from './idioma-provider'
+import Header from '../components/header'
+import { LanguageProvider } from '@/context/IdiomaProvider'
 
-const inter = Inter({ subsets: ['latin'], })
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
-  const [ingles, setIngles] = useState(true);
   return (
     <html lang="en">
       <body className={inter.className}>
-      
-        <Header 
-          setIngles={setIngles}
-          ingles={ingles}
-        />
-        <LanguageProvider
-          ingles={ingles}
-        >
+        <LanguageProvider>
+          <Header />
           {children}
         </LanguageProvider>
-        <Script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" />
+        
       </body>
     </html>
   )

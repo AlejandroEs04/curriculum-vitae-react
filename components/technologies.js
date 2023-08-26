@@ -1,14 +1,13 @@
-import styles from '../../styles/technologies.module.css'
-import Image from 'next/image'
-import { tecnologias } from '../data/technologies'
-import Technology from './technology'
-import reactImage from '../../public/img/react.svg'
-import javaImage from '../../public/img/java.png'
-import phpImage from '../../public/img/php.png'
-import cssImage from '../../public/img/css.png'
-import pythonImage from '../../public/img/python.jpg'
+import styles from '../styles/technologies.module.css'
+import Technology from './Technology'
 
-function Technologies({ingles}) {
+const fetchTecnologias = () => {
+  return fetch('https://noxxugmr.apicdn.sanity.io/v2021-03-25/data/query/production?query=*[_type+%3D%3D+%22tecnologias%22]', { cache: 'no-cache' }).then(res => res.json())
+}
+
+async function Technologies() {
+  const {result: tecnologias} = await fetchTecnologias()
+
   return (
     <div className={styles.technologies} id='tegnologies'>
       <h2>{ingles === false ? 'Mis Tecnologias' : 'My Technologies'}</h2>
