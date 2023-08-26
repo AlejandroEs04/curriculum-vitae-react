@@ -7,6 +7,7 @@ const fetchTecnologias = () => {
 
 async function Technologies() {
   const {result: tecnologias} = await fetchTecnologias()
+  const ingles = true
 
   return (
     <div className={styles.technologies} id='tegnologies'>
