@@ -2,11 +2,12 @@ import styles from '../styles/technologies.module.css'
 import Technology from './Technology'
 
 const fetchTecnologias = () => {
-  return fetch('https://noxxugmr.apicdn.sanity.io/v2021-03-25/data/query/production?query=*[_type+%3D%3D+%22tecnologias%22]', { cache: 'no-cache' }).then(res => res.json())
+  return fetch('https://noxxugmr.api.sanity.io/v2021-03-25/data/query/production?query=*[_type=="tecnologias"]', { cache: 'no-cache' }).then(res => res.json())
 }
 
 async function Technologies() {
   const {result: tecnologias} = await fetchTecnologias()
+  const ingles = true
 
   return (
     <div className={styles.technologies} id='tegnologies'>

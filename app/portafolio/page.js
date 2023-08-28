@@ -2,7 +2,7 @@ import styles from '../../styles/portafolio.module.css'
 import Proyect from "@/components/proyect";
 
 const fetchProjects = () => {
-  return fetch('https://noxxugmr.apicdn.sanity.io/v2021-03-25/data/query/production?query=*[_type+%3D%3D+%22proyectos%22]', { cache: 'no-cache' }).then(res => res.json())
+  return fetch('https://noxxugmr.api.sanity.io/v2021-03-25/data/query/production?query=*[_type=="proyectos"]', { cache: 'no-cache' }).then(res => res.json())
 }
 
 export default async function Page() {

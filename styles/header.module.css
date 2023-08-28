@@ -5,7 +5,7 @@
     padding: 1.8rem 15%;
     width: 100%;
     justify-content: space-between;
-    background: rgba(37, 37, 37, 0.253);
+    background: rgba(0, 0, 0, 0.616);
     backdrop-filter: blur(20px) ;
     position: fixed;
     box-shadow: 0px 5px 10px #00000048;
@@ -32,6 +32,17 @@
     .barraNav {
         flex-direction: row;
     }
+}
+.navContainer {
+    display: none;
+    justify-content: space-around;
+    width: 70%;
+}
+.navLogoButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
 }
 .navegacion {
     display: flex;
@@ -61,7 +72,7 @@
     }
 }
 .headerBtn {
-    border: none;
+    border: flex;
     border-radius: 0.01rem;
     background-color: var(--primaryLight);
     color: var(--white);
@@ -115,4 +126,18 @@
     color: var(--black);
     text-decoration: none;
     font-weight: 700;
+}
+.canvaBg {
+    background-color: black;
+}
+@media (min-width: 768px) {
+    .navLogoButton {
+        width: 30%;
+    }
+    .navLogoButton div {
+        display: none;
+    }
+    .navContainer {
+        display: flex;
+    }
 }

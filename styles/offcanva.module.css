@@ -1,0 +1,52 @@
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8rem;
+    margin: 3rem 1rem;
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+.navegacion a {
+    color: var(--primaryLight);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all linear 0.2s 0.05s;
+}
+.navegacion a:hover {
+    color: var(--primary);
+
+}
+.navegacion button {
+    background-color: var(--primaryLight);
+    color: var(--white);
+    border: none;
+    padding: 0.25rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+.contenedorRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contenedorRedes .markImage {
+    width: 2.5rem;
+    height: auto;
+}
+.contenedorRedes img {
+    filter: invert(100);
+    width: 8rem;
+    height: auto;
+}
+.btnLink {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 700;
+}
