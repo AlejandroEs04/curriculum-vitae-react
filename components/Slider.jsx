@@ -8,15 +8,15 @@ const Slider = ({imagenes}) => {
   return (
     <Carousel className={styles.slider}>
         <Carousel.Item>
-          <Image className={styles.imagenSlider} src={imagenes.imagen1.URL} width={300} height={300} />
+          <Image className={styles.imagenSlider} src={imagenes.imagen1.URL} width={500} height={500} />
         </Carousel.Item>
 
         <Carousel.Item>
-          <Image className={styles.imagenSlider} src={imagenes.imagen2.URL} width={300} height={300} />
+          <Image className={styles.imagenSlider} src={imagenes.imagen2.URL} width={500} height={500} />
         </Carousel.Item>
 
         <Carousel.Item>
-          <Image className={styles.imagenSlider} src={imagenes.imagen3.URL} width={300} height={300} />
+          <Image className={styles.imagenSlider} src={imagenes.imagen3.URL} width={500} height={500} />
         </Carousel.Item>
     </Carousel>
   )

@@ -1,12 +1,14 @@
+'use client'
 import styles from '../../styles/contacto.module.css'
 import Image from "next/image"
 import Link from "next/link"
-import FormularioContacto from "@/components/formularioContacto"
+import FormularioContacto from '@/components/FormularioContacto'
 import whatsappIcon from '../../public/img/whatsapp.svg'
 import guithubIcon from '../../public/img/github.svg'
+import useLanguage from '@/hooks/useLanguage'
 
 function Page() {
-  const ingles = true
+  const {ingles} = useLanguage()
   return (
     <main>
       <div className="paginaInicio">

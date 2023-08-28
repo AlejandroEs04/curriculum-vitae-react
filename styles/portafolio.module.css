@@ -5,7 +5,12 @@
     margin-bottom: 0;
     color: var(--black);
     gap: 2rem;
-    padding: 3rem 10%;
+    padding: 3rem 8%;
+}
+@media (min-width: 1024px) {
+    .contenedorPortafolio {
+        padding: 3rem 15%;
+    }
 }
 .contenedorPortafolio h2 {
     text-transform: uppercase;

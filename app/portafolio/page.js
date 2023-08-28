@@ -1,5 +1,5 @@
 import styles from '../../styles/portafolio.module.css'
-import Proyect from "@/components/proyect";
+import Proyect from '@/components/Proyect'
 
 const fetchProjects = () => {
   return fetch('https://noxxugmr.api.sanity.io/v2021-03-25/data/query/production?query=*[_type=="proyectos"]', { cache: 'no-cache' }).then(res => res.json())
