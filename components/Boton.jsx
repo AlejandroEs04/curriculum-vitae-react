@@ -12,7 +12,7 @@ function Boton() {
   };
   return (
     <Button size='lg' className='btn' onClick={saveFile}>
-        <p>Download CV</p>
+        <p>See my CV</p>
     </Button>
   )
 }

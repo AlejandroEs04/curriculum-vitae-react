@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <>
       <main>
-        <div className={styles.paginaInicio}>
+        <div className={styles.headerInicioContainer}>
           <div className='grid2'>
             <HeaderInicio />
           </div>

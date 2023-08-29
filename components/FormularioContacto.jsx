@@ -17,36 +17,28 @@ function FormularioContacto({ingles}) {
             <Form>
                 <Row>
                     <Col>
-                        <FloatingLabel
-                            label="Nombre"
-                            className="mb-3"
-                        >
-                            <Form.Control size='lg' placeholder="Name" />
-                        </FloatingLabel>
+                        <Form.Label htmlFor="name">Name</Form.Label>
+                        <Form.Control id='name' size='lg' placeholder="Name" />
                     </Col>
                     <Col>
-                        <FloatingLabel
-                            label="Last Name"
-                            className="mb-3"
-                        >
-                            <Form.Control placeholder="Last Name" />
-                        </FloatingLabel>
+                        <Form.Label htmlFor="lastName">Last Name</Form.Label>
+                        <Form.Control id='lastName' size='lg' placeholder="Last Name" />
                     </Col>
                 </Row>
-                <FloatingLabel
-                    label="Email"
-                    className="mb-3"
-                >
-                    <Form.Control size='lg' placeholder="Email" />
-                </FloatingLabel>
-
-                <FloatingLabel className="mb-3" label="Comments">
-                    <Form.Control
-                        as="textarea"
-                        style={{ height: '100px' }}
-                    />
-                </FloatingLabel>
-                
+                    <div>
+                        <Form.Label htmlFor="email">Email</Form.Label>
+                        <Form.Control id='email' size='lg' placeholder="Email" />
+                    </div>
+                    
+                    <div>
+                        <Form.Label htmlFor="comments">Comments</Form.Label>
+                        <Form.Control
+                            id='comments'
+                            as="textarea"
+                            style={{ height: '100px' }}
+                        />
+                    </div>
+                    
             </Form>
         </div>
     )

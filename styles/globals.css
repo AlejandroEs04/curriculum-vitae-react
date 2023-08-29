@@ -51,22 +51,14 @@ a {
 .paginaInicio {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 30vh;
-  margin-top: 15rem;
-  padding-top: 10rem;
+  align-items: end;
+  height: 25rem;
+  padding-bottom: 5rem;
 }
 .paginaInicio h1 {
   color: var(--white);
   font-size: 4rem;
   font-weight: 700;
-}
-@media (min-width: 768px) {
-  .paginaInicio {
-    height: 30vh;
-    margin: 0;
-    padding-top: 10rem;
-  }
 }
 .paginaInicio h1{
   text-align: center;
@@ -103,7 +95,7 @@ a {
   align-items: center;
   gap: 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .flexRow {
     flex-direction: row;
   }

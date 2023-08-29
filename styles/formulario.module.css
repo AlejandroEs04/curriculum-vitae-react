@@ -1,4 +1,20 @@
 .contenedorFormulario {
-    width: 60%;
+    width: 100%;
     margin: 2rem;
+}
+.contenedorFormulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contenedorFormulario form label {
+    font-size: 1.5rem;
+}
+.contenedorFormulario form input {
+    font-size: 1.6rem;
+}
+@media (min-width: 1024px) {
+    .contenedorFormulario {
+        width: 60%;
+    }
 }

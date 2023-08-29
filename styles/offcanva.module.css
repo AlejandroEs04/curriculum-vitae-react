@@ -50,3 +50,9 @@
     font-size: 2rem;
     font-weight: 700;
 }
+.text {
+    font-size: 1.8rem;
+}
+.barras {
+    filter: invert(100);
+}

@@ -18,8 +18,11 @@ function Page() {
       <div className={`${styles.contactPage}`}>
         <div className={`contenedor ${styles.contenedor}`}>
           <div className={styles.contactText}>
-            <h2>{ingles === false ? 'Gracias por contactarme' : 'Thanks for contact me'}</h2>
-            <p>{ingles === false ? 'Contestare lo mas pronto posible' : "I'll answer more posible quick"}</p>
+            <div>
+              <h2>{ingles === false ? 'Gracias por contactarme' : 'Thanks for contact me'}</h2>
+              <p>{ingles === false ? 'Contestare lo mas pronto posible' : "I'll answer more posible quick"}</p>
+            </div>
+            
 
             <div className={styles.contactoformas}>
               <div>

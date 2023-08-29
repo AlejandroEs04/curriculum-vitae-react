@@ -1,9 +1,8 @@
-.paginaInicio {
+.headerInicioContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto;
-    margin: 25rem 0 5rem 0;
+    height: 100vh;
 }
 .presentacion {
     display: flex;
@@ -15,13 +14,7 @@
 .contenedorImagen {
     display: none;
 }
-@media (min-width: 768px) {
-    .paginaInicio {
-        height: 100vh;
-        margin: 0;
-    }
-}
-@media (min-width: 1008px) {
+@media (min-width: 1024px) {
     .contenedorImagen {
         display: flex;
     }
@@ -44,12 +37,12 @@
     font-weight: 300;
     margin-top: 3rem;
 }
-.paginaInicio h1 span {
+.headerInicioContainer h1 span {
     font-size: 7rem;
     font-weight: 700;
     color: var(--primaryLight);
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .presentacion h1,
     .presentacion span {
         font-size: 7rem;
