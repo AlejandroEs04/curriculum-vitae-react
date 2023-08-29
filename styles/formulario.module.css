@@ -1,6 +1,7 @@
 .contenedorFormulario {
     width: 100%;
-    margin: 2rem;
+    margin: 0;
+    margin-top: 3rem;
 }
 .contenedorFormulario form {
     display: flex;
@@ -10,11 +11,19 @@
 .contenedorFormulario form label {
     font-size: 1.5rem;
 }
-.contenedorFormulario form input {
+.contenedorFormulario form input, .contenedorFormulario form textarea {
     font-size: 1.6rem;
+}
+.contenedorFormulario form button {
+    font-size: 1.8rem;
 }
 @media (min-width: 1024px) {
     .contenedorFormulario {
         width: 60%;
+        margin: 2rem;
     }
+}
+.alert {
+    font-size: 1.6rem;
+    text-align: center;
 }

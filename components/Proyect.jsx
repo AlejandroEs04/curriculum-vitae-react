@@ -1,8 +1,11 @@
+'use client'
 import styles from '../styles/proyecto.module.css'
 import Link from 'next/link'
 import Slider from './Slider'
+import useLanguage from '@/hooks/useLanguage'
 
-function Proyect({proyecto, ingles}) {
+function Proyect({proyecto}) {
+  const {ingles} = useLanguage()
   return (
     <div className={styles.contenedorProyecto}>
         <div className={styles.textoProyecto}>

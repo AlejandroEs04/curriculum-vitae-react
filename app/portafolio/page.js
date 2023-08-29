@@ -1,3 +1,4 @@
+import Titulo from '@/components/Titulo'
 import styles from '../../styles/portafolio.module.css'
 import Proyect from '@/components/Proyect'
 
@@ -13,7 +14,10 @@ export default async function Page() {
   return (
     <main>
       <div className="paginaInicio">
-        <h1>{ingles === false ? 'Portafolio' : 'Portfolio'}</h1>
+        <Titulo 
+          titulo='Portafolio'
+          title='Portfolio'
+        />
       </div>
 
       <div className="white">

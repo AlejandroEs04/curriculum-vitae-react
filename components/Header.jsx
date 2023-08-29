@@ -2,7 +2,6 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import styles from '../styles/header.module.css'
-
 import useLanguage from "@/hooks/useLanguage"
 import HideNav from "./HideNav"
 import Navegacion from "./Navegacion"

@@ -4,9 +4,10 @@
 }
 .technologies h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
     color: var(--white);
+    text-transform: uppercase;
 }
 .technologiesGrid {
     display: grid;

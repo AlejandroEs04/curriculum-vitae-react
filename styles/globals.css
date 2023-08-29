@@ -65,10 +65,15 @@ a {
 }
 .contenedor {
   color: var(--white);
-  margin: 3rem 8%;
-  padding: 2rem;
+  margin: 3rem 1%;
+  padding: 1rem;
   border-radius: 1rem;
   word-break: normal;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    margin: 3rem 10%;
+  }
 }
 @media (min-width: 1024px) {
   .contenedor {

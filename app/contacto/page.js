@@ -27,7 +27,7 @@ function Page() {
             <div className={styles.contactoformas}>
               <div>
                 <p>{ingles === false ? 'Tambien puedes contactarme por:' : "Also, you can contact me for:"}</p>
-                <Link href={'#'}>
+                <Link href={'https://wa.me/8110367083'}>
                   <Image src={whatsappIcon} alt="Contacto por Whatsapp" />
                 </Link>
                 
