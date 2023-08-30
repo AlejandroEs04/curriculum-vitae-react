@@ -6,6 +6,11 @@ const fetchProjects = () => {
   return fetch('https://noxxugmr.api.sanity.io/v2021-03-25/data/query/production?query=*[_type=="proyectos"]', { cache: 'no-cache' }).then(res => res.json())
 }
 
+export const metadata = {
+  title: 'Portafolio',
+  description: 'Seccion de los proyectos realizados y mi experiencia',
+}
+
 export default async function Page() {
   const ingles = true
 

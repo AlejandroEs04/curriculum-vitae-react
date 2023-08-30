@@ -4,6 +4,11 @@ import AboutMe from '@/components/aboutMe'
 import HeaderInicio from '@/components/HeaderInicio'
 import Boton from '@/components/Boton'
 
+export const metadata = {
+  title: 'AlexDev',
+  description: 'Seccion principal de la pagina',
+}
+
 export default function Index() {
   
   return (

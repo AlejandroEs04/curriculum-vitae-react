@@ -7,6 +7,11 @@ import whatsappIcon from '../../public/img/whatsapp.svg'
 import guithubIcon from '../../public/img/github.svg'
 import useLanguage from '@/hooks/useLanguage'
 
+export const metadata = {
+  title: 'Contactame',
+  description: 'Seccion de contacto',
+}
+
 function Page() {
   const {ingles} = useLanguage()
   return (
