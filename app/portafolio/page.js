@@ -7,7 +7,7 @@ const fetchProjects = () => {
 }
 
 export const metadata = {
-  title: 'Portafolio',
+  title: 'AlexDev - Portafolio',
   description: 'Seccion de los proyectos realizados y mi experiencia',
 }
 

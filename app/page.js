@@ -5,7 +5,7 @@ import HeaderInicio from '@/components/HeaderInicio'
 import Boton from '@/components/Boton'
 
 export const metadata = {
-  title: 'AlexDev',
+  title: 'AlexDev - Inicio',
   description: 'Seccion principal de la pagina',
 }
 

@@ -8,7 +8,7 @@ import guithubIcon from '../../public/img/github.svg'
 import useLanguage from '@/hooks/useLanguage'
 
 export const metadata = {
-  title: 'Contactame',
+  title: 'AlexDev - Contactame',
   description: 'Seccion de contacto',
 }
 
