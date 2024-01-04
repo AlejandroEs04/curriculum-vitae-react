@@ -15,7 +15,7 @@ export default function Index() {
     <>
       <main>
         <div className={styles.headerInicioContainer}>
-          <div className='grid2'>
+          <div>
             <HeaderInicio />
           </div>
 

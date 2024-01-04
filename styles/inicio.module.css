@@ -13,11 +13,56 @@
 }
 .contenedorImagen {
     display: none;
+    
+}
+.contenedorImagen img {
+    width: 70%;
+    height: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 10%;
 }
 @media (min-width: 1024px) {
     .contenedorImagen {
         display: flex;
     }
+}
+.contenedorImagenRelative {
+    position: relative;
+}
+.contenedorImagenRelative div, .contenedorImagenRelative h1 {
+    position: absolute;
+}
+.div1 {
+    width: 6rem;
+    top: -1rem;
+    left: -2rem;
+}
+.div2 {
+    width: 7rem;
+    right: 12rem;
+    top: 15rem;
+}
+.div3 {
+    width: 20rem;
+    left: -3rem;
+    bottom: -4rem;
+}
+.div4 {
+    width: 15rem;
+    right: 10rem;
+    bottom: -4rem;
+}
+.div5 {
+    width: 10rem;
+    left: -3rem;
+    top: 2rem;
+}
+.div6 {
+    width: 10rem;
+    right: 13rem;
+    top: -2rem;
 }
 .presentacion h1 {
     font-weight: 700;
